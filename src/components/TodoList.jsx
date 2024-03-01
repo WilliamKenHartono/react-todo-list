@@ -13,6 +13,7 @@ export function TodoList({ todos, toggleTodo, deleteTodo }) {
               key={todo.id}
               toggleTodo={toggleTodo}
               deleteTodo={deleteTodo}
+              editTodo={editTodo}
             />
           );
         })}

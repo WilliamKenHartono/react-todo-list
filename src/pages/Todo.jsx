@@ -33,10 +33,16 @@ function Todo() {
     });
   }
 
+  function editTodo(id) {
+    setTodos((currentTodos) => {
+      return currentTodos.filter((todo) => todo.id !== id);
+    })
+  }
+
   return (
     <>
       <TodoForm addTodo={addTodo} />
-      <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
+      <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} editTodo={editTodo} />
     </>
   );
 }
