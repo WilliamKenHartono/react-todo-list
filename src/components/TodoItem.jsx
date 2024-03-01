@@ -12,7 +12,7 @@ export function TodoItem({ completed, id, title, toggleTodo, deleteTodo }) {
           Delete
         </button>
         {title}
-        <button className="btn btn-toggle" onClick={() => editTodo(id)}>
+        <button className="btn btn-edit" onClick={() => editTodo(id)}>
           Edit
         </button>
       </label>
