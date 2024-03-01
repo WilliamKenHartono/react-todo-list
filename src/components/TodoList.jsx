@@ -1,6 +1,6 @@
 import { TodoItem } from "./TodoItem";
 
-export function TodoList({ todos, toggleTodo, deleteTodo }) {
+export function TodoList({ todos, toggleTodo, deleteTodo, editTodo }) {
   return (
     <div>
       <h1 className="header"> Todo List</h1>
